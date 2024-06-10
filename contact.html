@@ -11,6 +11,97 @@
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
+
+<style>
+    body {
+        background: linear-gradient(to bottom, grey, white);
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        color: #007bff;
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .paragraph-container {
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0;
+        background-color: white;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    .paragraph-container p {
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    #animated-s {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 50px;
+        font-weight: bold;
+        color: #007bff;
+        animation: dropS 2s ease forwards;
+    }
+
+    @keyframes dropS {
+        0% {
+            top: -100px;
+        }
+        100% {
+            top: 10px;
+        }
+    }
+
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .image-grid-item {
+        width: 30%;
+        text-align: center;
+    }
+
+    .image-grid img {
+        border: 5px solid #007bff;
+        border-radius: 10px;
+        width: 100%;
+        transition: transform 0.3s;
+    }
+
+    .image-grid img:hover {
+        transform: scale(1.05);
+    }
+
+    .image-description {
+        margin-top: 10px;
+    }
+</style>
 <body>
 
     <!-- Navigation Tabs -->
@@ -40,6 +131,15 @@
     <div class="container">
         <h1>Contact Us</h1>
         <p>This is the contact page of your website.</p>
+    </div>
+
+    <div class="paragraph-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+    </div>
+    <div class="paragraph-container">
+        <p>Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam.</p>
     </div>
 
     <!-- jQuery -->

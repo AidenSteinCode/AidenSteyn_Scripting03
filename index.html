@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,108 @@
 
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, grey, white);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .paragraph-container {
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .paragraph-container p {
+            margin: 10px 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #animated-s {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: #007bff;
+            animation: dropS 2s ease forwards;
+        }
+
+        @keyframes dropS {
+            0% {
+                top: -100px;
+            }
+            100% {
+                top: 10px;
+            }
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .image-grid-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-grid img {
+            border: 5px solid #007bff;
+            border-radius: 10px;
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-description {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="overlay">
+            <div class="hero-content text-center">
+            
+            </div>
+        </div>
+    </div>
 
     <!-- Animated Letter S -->
     <div id="animated-s">S</div>
@@ -22,7 +122,7 @@
     <!-- Decorative Block -->
     <div class="jumbotron text-center">
         <h1>Welcome to Stein's Design</h1>
-        <p><h>Creations made from passion and vibes</h2></p>
+        <p>Creations made from passion and vibes</p>
     </div>
 
     <!-- Navigation Tabs -->  
@@ -50,7 +150,7 @@
     </nav>
 
     <div class="container">
-        <h1 class="text-center">WSP BRO</h1>
+    
         <div class="row">
             <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
