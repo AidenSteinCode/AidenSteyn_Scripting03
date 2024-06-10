@@ -10,98 +10,98 @@
 
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
-</head>
 
-<style>
-    body {
-        background: linear-gradient(to bottom, grey, white);
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    h1 {
-        color: #007bff;
-        margin-top: 20px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .navbar {
-        margin-bottom: 20px;
-    }
-
-    .paragraph-container {
-        border: 2px solid #007bff;
-        border-radius: 10px;
-        padding: 20px;
-        margin: 20px 0;
-        background-color: white;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeInUp 1s ease-in-out forwards;
-    }
-
-    .paragraph-container p {
-        margin: 10px 0;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    @keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
+    <style>
+        body {
+            background: linear-gradient(to bottom, grey, white);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
-    }
 
-    #animated-s {
-        position: absolute;
-        top: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 50px;
-        font-weight: bold;
-        color: #007bff;
-        animation: dropS 2s ease forwards;
-    }
+        h1 {
+            color: #007bff;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
 
-    @keyframes dropS {
-        0% {
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .paragraph-container {
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .paragraph-container p {
+            margin: 10px 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #animated-s {
+            position: absolute;
             top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: #007bff;
+            animation: dropS 2s ease forwards;
         }
-        100% {
-            top: 10px;
+
+        @keyframes dropS {
+            0% {
+                top: -100px;
+            }
+            100% {
+                top: 10px;
+            }
         }
-    }
 
-    .image-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
 
-    .image-grid-item {
-        width: 30%;
-        text-align: center;
-    }
+        .image-grid-item {
+            width: 30%;
+            text-align: center;
+        }
 
-    .image-grid img {
-        border: 5px solid #007bff;
-        border-radius: 10px;
-        width: 100%;
-        transition: transform 0.3s;
-    }
+        .image-grid img {
+            border: 5px solid #007bff;
+            border-radius: 10px;
+            width: 100%;
+            transition: transform 0.3s;
+        }
 
-    .image-grid img:hover {
-        transform: scale(1.05);
-    }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
 
-    .image-description {
-        margin-top: 10px;
-    }
-</style>
+        .image-description {
+            margin-top: 10px;
+        }
+    </style>
+</head>
 <body>
 
     <!-- Navigation Tabs -->
@@ -130,16 +130,13 @@
 
     <div class="container">
         <h1>Contact me!</h1>
-        
     </div>
 
     <div class="paragraph-container">
-        <p>Please contact me through rituals or pigoen. Those are the only methods of contact I have access to.</p>
-        <p></p>
+        <p>Please contact me through rituals or pigeon. Those are the only methods of contact I have access to.</p>
     </div>
     <div class="paragraph-container">
-        <p>I am completely serious Andi.</p>
-        <p></p>
+        <p>I am completely serious, Andi.</p>
     </div>
 
     <!-- jQuery -->
